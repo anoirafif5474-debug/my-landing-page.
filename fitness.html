@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Fitness Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f4f7;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            max-width: 550px;
+            margin: auto;
+        }
+        h1 {
+            color: #e74c3c;
+        }
+        button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+        .locked-content {
+            display: none;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Unlock Your Free Fitness Guide!</h1>
+    <p>Complete the action below to access exclusive health and fitness tips, workouts, and diet plans.</p>
+    <button onclick="unlockContent()">Unlock Now</button>
+    
+    <div class="locked-content" id="content">
+        <h2>Congrats! 🎉</h2>
+        <p>Here is your exclusive Health & Fitness guide. Start your journey to a healthier lifestyle!</p>
+        <a href="YOUR_OGADS_OFFER_LINK" target="_blank">
+            <button>Access Offer</button>
+        </a>
+    </div>
+</div>
+
+<script>
+    function unlockContent() {
+        document.getElementById('content').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
